@@ -1,0 +1,41 @@
+@import "../../consts/consts.scss";
+
+.header {
+  width: 70vw;
+  height: 100px;
+  @include to-center_row();
+}
+.header__menu {
+  @include menu-style();
+  @include to-center_row();
+}
+.header__link {
+  text-decoration: none;
+  color: $main-text-color;
+  @include transition-for-text();
+}
+.header__link:hover{
+    @include text-link-hover();
+}
+.header__soc-link {
+  position: relative;
+
+  .header__hover {
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: $hover-gradient;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    z-index: 1;
+  }
+  .header__hover:hover {
+    opacity: 1;
+  }
+}
+.header__soc-menu {
+  @include to-center_row();
+}

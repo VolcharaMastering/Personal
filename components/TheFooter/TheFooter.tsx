@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../images/vmstr-logo.svg";
+import logo from "../../images/vmstr-logo.svg";
 
 export default function TheFooter() {
   return (
