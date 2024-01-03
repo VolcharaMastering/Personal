@@ -1,10 +1,10 @@
 import Link from "next/link";
-import "./TheHeader.scss";
 import Image from "next/image";
+
+import "./TheHeader.scss";
+
+import SnMenu from "../SnMenu/SnMenu";
 import logo from "../../images/vmstr-logo.svg";
-import tgLogo from "../../images/tg.svg";
-import mailLogo from "../../images/mail.svg";
-import linkedinLogo from "../../images/linkedin.svg";
 
 export default function TheHeader() {
   return (
@@ -23,23 +23,7 @@ export default function TheHeader() {
           Мои проекты
         </Link>
       </nav>
-      <nav className="header__soc-menu">
-        <Link href="https://t.me/Ya_est_grut" className="header__soc-link">
-          <div className="header__hover"></div>
-          <Image src={tgLogo} alt="telegram Logo" />
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/aleksey-barabanov-179600260"
-          className="header__soc-link"
-        >
-          <div className="header__hover"></div>
-          <Image src={linkedinLogo} height={38} width={38} alt="linkedIn Logo" />
-        </Link>
-        <Link href="mailto:vmstr@vmstr.ru"  className="header__soc-link">
-          <div className="header__hover"></div>
-          <Image src={mailLogo} width={44} alt="mail Logo" />
-        </Link>
-      </nav>
+      <SnMenu />
     </header>
   );
 }
