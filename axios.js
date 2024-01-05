@@ -1,7 +1,16 @@
-import axios from 'axios';
+/* eslint-disable no-undef */
+import axios from "axios";
 
-const axiosConf = axios.create({
-  baseURL: 'https://api.airtable.com/v0/appJlGDV0pbBz6yBk/', 
+const axiosApi = axios.create({
+  baseURL: process.env.URL,
 });
-axiosConf.defaults.headers.common['Authorization'] ='Bearer pat7elzsKYFbwpn5N.6d33289f69a32b46a00ab4e978506c296e2bdc08fbc11ed8308b74c5f1ad7967'
-export default axiosConf;
+
+// Inject Airtable API key on every request
+axiosApi.interceptors.request.use((config) => {
+  const apiKey = process.env.AIRTABLE_KEY;
+  config.headers.Authorization = `Bearer ${apiKey}`;
+  return config;
+});
+
+
+export default axiosApi;
