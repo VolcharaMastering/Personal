@@ -6,10 +6,10 @@ type Props = {
   };
 };
 export async function generateMetadata({
-  params: {id},
+  params: { id },
 }: Props): Promise<Metadata> {
   return {
-    title: id,
+    title: `Project ${id}`,
   };
 }
 

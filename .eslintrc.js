@@ -30,17 +30,9 @@ module.exports = {
 	"plugins": [
 		"@typescript-eslint",
 		"react",
-		"SCSS"
+		"CSS"
 	],
 	"rules": {
-		"indent": [
-			"error",
-			"tab"
-		],
-		"quotes": [
-			"error",
-			"double"
-		],
 		"semi": [
 			"error",
 			"always"

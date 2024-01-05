@@ -1,3 +1,4 @@
+import { getProjects } from "@/api/getProjects";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,6 +7,8 @@ export const metadata: Metadata = {
 };
 
 function Projects() {
+  const myProjects = getProjects();
+  console.log("Projects", myProjects);
   return <div>My Projects</div>;
 }
 

@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 function ProjectsLayout({children, }: {children: React.ReactNode}) {
 
@@ -24,7 +24,7 @@ function ProjectsLayout({children, }: {children: React.ReactNode}) {
             {children}
         </nav>
     </section>
-  )
+  );
 }
 
-export default ProjectsLayout
+export default ProjectsLayout;
