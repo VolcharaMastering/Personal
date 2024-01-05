@@ -1,0 +1,20 @@
+@import "../../consts/consts.scss";
+@import "../../consts/mixins.scss";
+
+.header {
+  width: 70vw;
+  height: 100px;
+  @include to-center_row();
+}
+.header__menu {
+  @include menu-style();
+  @include to-center_row();
+}
+.header__link {
+  text-decoration: none;
+  color: $main-text-color;
+  @include transition-for-text();
+}
+.header__link:hover{
+    @include text-link-hover();
+}

@@ -1,7 +1,4 @@
-$main-color: #132222;
-$main-text-color: white;
-$h2-gradient: linear-gradient(0deg, #00b292, #2dffd9, #54ffe0, #03776f);
-$h3-gradient: linear-gradient(90deg, #00b292, #2dffd9, #54ffe0, #00f0e0);
+@import "./consts.scss";
 
 @mixin to-center_row($align: center, $justify: space-between) {
   display: flex;
@@ -24,4 +21,19 @@ $h3-gradient: linear-gradient(90deg, #00b292, #2dffd9, #54ffe0, #00f0e0);
   font-size: $font-size;
   font-weight: $font-weight;
   color: $color;
+}
+@mixin menu-style() {
+  width: 60%;
+  font-size: 18px;
+}
+@mixin transition-for-text($transition: $transition-value) {
+  transition: $transition;
+}
+@mixin text-link-hover(
+  $opacity: 80%,
+  $text-shadow: 1px 1px 1px $hover-text-shadow
+) {
+  opacity: $opacity;
+  cursor: pointer;
+  text-shadow: $text-shadow;
 }

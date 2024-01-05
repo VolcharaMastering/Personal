@@ -1,4 +1,5 @@
-@import "./consts/consts.scss";
+@import "../consts/consts.scss";
+@import "../consts/mixins.scss";
 
 * {
   box-sizing: border-box;
@@ -16,7 +17,6 @@ body {
 body {
   background: $main-color;
   @include font-style();
-  flex: 1;
   @include to-center_column(center, space-between);
   h1 {
     font-family: var(--font-tektur);

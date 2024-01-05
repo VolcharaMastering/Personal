@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Tektur, Exo_2 } from "next/font/google";
 import "./global.scss";
-import TheFooter from "@/components/TheFooter";
-import TheHeader from "@/components/TheHeader";
+import TheFooter from "@/components/TheFooter/TheFooter";
+import TheHeader from "@/components/TheHeader/TheHeader";
 
 const tektur = Tektur({
   subsets: ["cyrillic", "latin"],
