@@ -12,7 +12,7 @@ function SnMenu() {
     <nav className="sn-menu">
       <Link href="https://t.me/Ya_est_grut" target="_blank" className="sn-menu__link">
         <div className="sn-menu__hover"></div>
-        <Image src={tgLogo} alt="telegramLogo" />
+        <Image src={tgLogo} alt="telegram Logo" />
       </Link>
       <Link
         href="https://www.linkedin.com/in/aleksey-barabanov-179600260" target="_blank"
